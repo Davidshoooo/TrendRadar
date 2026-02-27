@@ -16,5 +16,5 @@ COPY . .
 # 暴露端口（Zeabur 默认喜欢 8080）
 EXPOSE 8080
 
-# 强行指定使用 SSE 协议启动，并绑定 0.0.0.0 和 8080 端口
-CMD ["python", "-m", "mcp_server.server", "--transport", "sse", "--host", "0.0.0.0", "--port", "8080"]
+# 既然它不支持 sse，我们就用它唯一认识的网络模式 http
+CMD ["python", "-m", "mcp_server.server", "--transport", "http", "--host", "0.0.0.0", "--port", "8080"]
