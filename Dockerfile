@@ -16,5 +16,6 @@ COPY . .
 # 暴露端口（Zeabur 默认喜欢 8080）
 EXPOSE 8080
 
-# 启动 MCP 服务模式
-CMD ["python", "mcp_server/server.py"]
+# 之前的旧命令：CMD ["python", "mcp_server/server.py"]
+# 现在的终极命令：
+CMD ["python", "-m", "mcp_server.server"]
