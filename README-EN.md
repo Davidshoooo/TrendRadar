@@ -3775,4 +3775,4 @@ GPL-3.0 License
 
 [🔝 Back to Top](#trendradar)
 
-</div> Commit changes
+</div>  
