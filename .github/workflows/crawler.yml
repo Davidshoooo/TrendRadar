@@ -38,6 +38,8 @@ on:
     - cron: "33 * * * *"
 
   workflow_dispatch:
+  push:
+    branches: [ "master" ]
 
 concurrency:
   group: crawler-${{ github.ref_name }}
